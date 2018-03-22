@@ -8,3 +8,6 @@ class CodeGenerated(models.Model):
     used_at = models.DateTimeField(null=True)
     code = models.CharField(max_length=10)
     metadata = models.TextField(max_length=1000)
+
+    def __str__(self):
+        return self.code
